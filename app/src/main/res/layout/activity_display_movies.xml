@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".DisplayMovies">
+
+<ListView
+    android:id="@+id/listView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/btn_New"
+    android:choiceMode="multipleChoice">
+</ListView>
+
+<Button
+    android:id="@+id/btn_New"
+    android:layout_width="wrap_content"
+    android:onClick="submitToFav"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_marginBottom="20dp"
+    android:text="ADD TO FAVORITES"
+    android:width="170dp"
+    android:layout_alignParentBottom="true" />
+</RelativeLayout>
+
+
+
+

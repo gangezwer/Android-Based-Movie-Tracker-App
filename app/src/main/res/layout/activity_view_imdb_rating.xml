@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+tools:context=".ViewImdbRating">
+
+<ListView
+    android:id="@+id/listViewselected"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/btn_New"
+    android:choiceMode="multipleChoice">
+</ListView>
+
+</RelativeLayout>
+
+
+
+

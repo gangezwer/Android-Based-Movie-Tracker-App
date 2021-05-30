@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateMovie">
+
+    <!--Edit text to enter course name-->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="313dp"
+        android:layout_height="67dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Edit Movie"
+        android:textColor="@color/teal_200"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/idEdtMovieName"
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="text" />
+
+    <!--Edit text to enter course name-->
+    <EditText
+        android:id="@+id/idEdtMovieYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="number" />
+
+    <!--Edit text to enter course name-->
+    <EditText
+        android:id="@+id/idEdtMovieDirector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="text" />
+
+    <!--Edit text to enter course name-->
+    <EditText
+        android:id="@+id/idEdtMovieActors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="text" />
+
+    <!--edit text to enter course duration-->
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="left"
+        android:text="Rating"
+        android:textColor="@color/teal_200"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/idEdtMovieRating"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:isIndicator="false"
+        android:max="10"
+        android:numStars="10"
+        android:stepSize="1.0" />
+
+    <!--edit text to display course tracks-->
+    <EditText
+        android:id="@+id/idEdtMovieReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="left"
+        android:text="Favorite / Not Favorite"
+        android:textColor="@color/teal_200"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!--button for adding new course-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        tools:ignore="UseSwitchCompatOrMaterialXml">
+
+        <TextView
+            android:id="@+id/favstatusgiver"
+            android:layout_width="317dp"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:textColor="@color/teal_200"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+        <Switch
+            android:id="@+id/switchfav"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textColorHighlight="#2196F3" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/idBtnUpdateCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="UPDATE"
+        android:textAllCaps="false" />
+
+</LinearLayout>
